@@ -1,0 +1,1 @@
+The CSS property `calc()` is used incorrectly with the `attr()` function, leading to unexpected behavior. For example, using `width: calc(100% - attr(data-offset));` when the `data-offset` attribute does not contain a valid unit (e.g., '10px') would lead to unexpected results.
