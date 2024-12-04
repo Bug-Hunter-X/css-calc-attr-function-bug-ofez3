@@ -1,0 +1,14 @@
+/* bugSolution.css */
+
+.element {
+  width: calc(100% - (attr(data-offset, 0) + 0px)); /* Add unit and fallback */
+}
+
+/* or, for a more robust solution: */
+
+.element {
+  width: calc(100% - var(--offset, 0px)); /* Use CSS variables for flexibility */
+}
+
+/* Set the variable in your HTML:
+<div class="element" style="--offset: 20px;"></div> */
